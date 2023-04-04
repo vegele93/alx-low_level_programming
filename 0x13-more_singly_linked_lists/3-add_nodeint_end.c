@@ -3,10 +3,10 @@
 
  /**
   * add_nodeint_end - Adds a new node at the end of a listint_t list
-  * @head: pointer to the head of the listint_t list
-  * @n: value to be added to the new node
+  * @head: A pointer to a pointer to the head of the listint_t list to modify
+  * @n: The integer to be added to the new node
   *
-  * Return: address of the new element, or NULL if it failed
+  * Return: The address of the new element or NULL on failure
   */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
@@ -23,16 +23,14 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	if (*head == NULL)
 	{
 		*head = new_node;
+		return (new_node);
 	}
-	else
-	{
+
 	current = *head;
 	while (current->next != NULL)
-	{
 		current = current->next;
-	}
+
 	current->next = new_node;
-	}
 
 	return (new_node);
 }
