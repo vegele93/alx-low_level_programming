@@ -7,7 +7,9 @@
  * struct listint_s - singly linked list
  * @n: integer
  * @next: points to the next node
+ *
  * Description: singly linked node structure
+ * for Holberton project
  */
 
 typedef struct listint_s
@@ -20,7 +22,9 @@ typedef struct listint_s
  * struct list_addr_s - singly linked list
  * @addr: pointer address value
  * @next: points to the next node
+ *
  * Description: singly linked node structure
+ * for Holberton project
  */
 
 typedef struct list_addr_s
